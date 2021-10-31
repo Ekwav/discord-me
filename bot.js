@@ -24,7 +24,6 @@ client.on('messageCreate', (message) => {
         message.reply(getHelloGif());
         return;
     }
-
     if(message.mentions.users.each(m=>{
         console.log();
         console.log();
