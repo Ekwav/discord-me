@@ -13,7 +13,7 @@ const MessageTimes = [];
 const responses = [{
     triggers: [/is this trusted/, /is this safe/, /is the mod safe/],
     response: "Hello you,\n" +
-        "the mod in #mod-releases  does not intentionally do shady things. (**no** token logging or similar)\n" +
+        "the mod in <#890682907889373257>  does not intentionally do shady things. (**no** token logging or similar)\n" +
         "It can send commands as you. This is necessary to open auctions, but a potential security risk. (because it could also send other commands)\n" +
         "At present it is in early alpha, but apparently already considered useful by most of our users.\n" +
         "I personally do not use it as I am busy improving the flip finding itself as well as developing other cool services/things."
@@ -33,7 +33,7 @@ client.on('messageCreate', (message) => {
     //if (message.channelId)
     var text = message.content.toLowerCase();
     if (message.author.bot) {
-        return; // the bot wont respond to itself 
+        return; // don't respond to bots
     }
 
     if (["hi", "hey", "hello", "hello there"].indexOf(text) >= 0) {
@@ -48,10 +48,12 @@ client.on('messageCreate', (message) => {
             if (cancel) return;
             if (trigger.test(message)) {
                 message.reply(element.response)
-                return;
+                cancel = true;
             }
         })
     });
+    if (cancel) return;
+
     if (message.mentions.users.each(m => {
         console.log();
         console.log();
