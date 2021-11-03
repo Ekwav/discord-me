@@ -10,6 +10,23 @@ const client = new Client({ intents: myIntents });
 
 const MessageTimes = [];
 
+const responses = [{
+    triggers: [/is this trusted/, /is this safe/, /is the mod safe/],
+    response: "Hello you,\n" +
+        "the mod in #mod-releases  does not intentionally do shady things. (**no** token logging or similar)\n" +
+        "It can send commands as you. This is necessary to open auctions, but a potential security risk. (because it could also send other commands)\n" +
+        "At present it is in early alpha, but apparently already considered useful by most of our users.\n" +
+        "I personally do not use it as I am busy improving the flip finding itself as well as developing other cool services/things."
+}, {
+    triggers: [/^is this legit/],
+    response: "Yes"
+}, {
+    triggers: [/this irl trading/, /this is irl trading/],
+    response: "the thing at sky.coflnet.com is a hosted service (like minecraft server) you can host it yourself if you want to.\n" +
+        "You only pay for the hosting.\n" +
+        "You do NOT pay for coins, we don't guarantee you coins we only host a service that shows you effective ways to earn them yourself. (think of it like an interactive youtube video)\n" +
+        "ergo. no irl trading here => not disallowed"
+}]
 
 client.on('messageCreate', (message) => {
     var response = "";
@@ -24,14 +41,25 @@ client.on('messageCreate', (message) => {
         message.reply(getHelloGif());
         return;
     }
-    if(message.mentions.users.each(m=>{
+    let cancel = false;
+    responses.forEach(element => {
+        if (cancel) return;
+        element.triggers.forEach(trigger => {
+            if (cancel) return;
+            if (trigger.test(message)) {
+                message.reply(element.response)
+                return;
+            }
+        })
+    });
+    if (message.mentions.users.each(m => {
         console.log();
         console.log();
         console.log(m);
-        
+
     }))
-    if (response != "")
-        message.channel.send(response)
+        if (response != "")
+            message.channel.send(response)
     return;
 
 })
