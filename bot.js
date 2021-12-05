@@ -18,7 +18,7 @@ const responses = [{
         "At present it is in early alpha, but apparently already considered useful by most of our users.\n" +
         "I personally do not use it as I am busy improving the flip finding itself as well as developing other cool services/things."
 }, {
-    triggers: [/^is this legit/],
+    triggers: [/^is this legit/, /is the[a-z ]{1,10}mod legit/],
     response: "Yes"
 }, {
     triggers: [/this irl trading/, /this is irl trading/],
@@ -121,8 +121,14 @@ const helloGifs = [
     "https://tenor.com/view/elmo-hi-hello-waving-hey-gif-4890900",
     "https://tenor.com/view/the-little-mermaid-ariel-hi-hey-hello-gif-4563081",
     "https://tenor.com/view/baby-groot-guardians-of-the-galaxy-salut-bonjour-wave-gif-12518484",
-    "https://tenor.com/view/hi-hello-greet-smile-wave-gif-17222872"
-
+    "https://tenor.com/view/hi-hello-greet-smile-wave-gif-17222872",
+    "https://tenor.com/view/cat-cute-hello-there-hi-notice-me-gif-13516138",
+    "https://tenor.com/view/mr-bean-funny-hello-hi-wave-gif-14824039",
+    "https://tenor.com/view/leigh574-critical-role-marisha-ray-hello-darkness-friend-gif-13660541",
+    "https://tenor.com/view/horse-laugh-hello-there-funny-animals-tongue-out-gif-12138451",
+    "https://tenor.com/view/what-horse-hello-there-funny-animals-gif-12138450",
+    "https://tenor.com/view/hey-sexy-lady-psy-dance-dance-party-gif-11731282",
+    "https://tenor.com/view/handshake-ignore-modi-69-gif-13417556"
 ]
 function getHelloGif() {
     return helloGifs[Math.floor(Math.random() * helloGifs.length)]
