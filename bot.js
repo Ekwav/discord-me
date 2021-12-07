@@ -26,6 +26,9 @@ const responses = [{
         "You only pay for the hosting.\n" +
         "You do NOT pay for coins, we don't guarantee you coins we only host a service that shows you effective ways to earn them yourself. (think of it like an interactive youtube video)\n" +
         "ergo. no irl trading here => not disallowed"
+}, {
+    triggers: [/904334586195087370/],
+    response: "Calling <@267680402594988033> "
 }]
 
 client.on('messageCreate', (message) => {
@@ -128,7 +131,8 @@ const helloGifs = [
     "https://tenor.com/view/horse-laugh-hello-there-funny-animals-tongue-out-gif-12138451",
     "https://tenor.com/view/what-horse-hello-there-funny-animals-gif-12138450",
     "https://tenor.com/view/hey-sexy-lady-psy-dance-dance-party-gif-11731282",
-    "https://tenor.com/view/handshake-ignore-modi-69-gif-13417556"
+    "https://tenor.com/view/handshake-ignore-modi-69-gif-13417556",
+    "https://tenor.com/view/cats-cuteness-cute-cat-funny-funny-animals-gif-14796882"
 ]
 function getHelloGif() {
     return helloGifs[Math.floor(Math.random() * helloGifs.length)]
