@@ -132,7 +132,22 @@ const helloGifs = [
     "https://tenor.com/view/what-horse-hello-there-funny-animals-gif-12138450",
     "https://tenor.com/view/hey-sexy-lady-psy-dance-dance-party-gif-11731282",
     "https://tenor.com/view/handshake-ignore-modi-69-gif-13417556",
-    "https://tenor.com/view/cats-cuteness-cute-cat-funny-funny-animals-gif-14796882"
+    "https://tenor.com/view/cats-cuteness-cute-cat-funny-funny-animals-gif-14796882",
+    "https://tenor.com/view/the-good-the-bad-and-the-ugly-clint-eastwood-man-with-no-name-howdy-hello-gif-11628498",
+    "https://tenor.com/view/howdy-cowboy-toy-story-gif-12394471",
+    "https://tenor.com/view/horse-hi-whats-up-howdy-handshake-gif-16791307",
+    "https://tenor.com/view/howdy-cute-dog-hat-hello-gif-17122582",
+    "https://tenor.com/view/hi-cute-cat-hey-waving-howdy-gif-16434085",
+    "https://tenor.com/view/howdy-partner-ho-gif-23450154",
+    "https://tenor.com/view/wyld-jimbo-howdy-spin-point-cowboy-gif-16410228",
+    "https://tenor.com/view/howdy-analmike-hello-hi-beard-gif-13632974",
+    "https://tenor.com/view/hello-hey-corgi-hi-howdy-gif-13203090",
+    "https://tenor.com/view/howdy-brad-pitt-gif-4956729",
+    "https://tenor.com/view/howdy-cowgirl-cowboy-hat-texas-gif-15566698",
+    "https://tenor.com/view/critical-role-crit-role-arsequeef-laura-bailey-cowboy-gif-13618685",
+    "https://tenor.com/view/jimmy-fallon-tonightshow-hi-hello-gif-13958590",
+    "https://tenor.com/view/madagascar-alex-the-lion-hi-there-hello-there-hey-there-gif-23421002",
+    "https://tenor.com/view/hi-hey-there-wassup-hey-gurl-gif-22273737"
 ]
 function getHelloGif() {
     return helloGifs[Math.floor(Math.random() * helloGifs.length)]
