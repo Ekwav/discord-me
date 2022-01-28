@@ -29,6 +29,14 @@ const responses = [{
 }, {
     triggers: [/904334586195087370/],
     response: "Calling <@267680402594988033> "
+}, {
+    triggers: [/\/ah.*(cheap|buy)/],
+    response: "Please don't violate rule #2, you will be kicked on your next violation."
+}, {
+    triggers: [/^what.*best setting/],
+    response: "The 'best' settings depend on what you want to accomplish. \n"
+    + "If you are new and want low risk flips enable the `sniper` flip finder and adjust your min profit and max cost according to your purse.\n"
+    + "I generally recommend using all flip finders with a relatively high min profit."
 }]
 
 client.on('messageCreate', (message) => {
