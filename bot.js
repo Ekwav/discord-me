@@ -87,7 +87,7 @@ client.on('messageCreate', async (message) => {
  */
 const joinList = {};
 
-client.on("guildMemberAdd", function(member){
+client.on("guildMemberAdd", async function(member){
     console.log(`a user joined: ${JSON.stringify(member)}`);
     var bucket = Math.round(member.user.createdTimestamp / 3600_000);
     var count = joinList[bucket];
