@@ -39,7 +39,7 @@ const responses = [{
     + "I generally recommend using all flip finders with a relatively high min profit."
 }]
 
-client.on('messageCreate', (message) => {
+client.on('messageCreate', async (message) => {
     var response = "";
     //if (message.channelId)
     var text = message.content.toLowerCase();
@@ -65,6 +65,12 @@ client.on('messageCreate', (message) => {
     });
     if (cancel) return;
 
+    if(message.member.displayName == "testacc")
+    {
+        console.log("its test");
+        let member = message.member;
+    }
+
     if (message.mentions.users.each(m => {
         console.log();
         console.log();
@@ -76,6 +82,30 @@ client.on('messageCreate', (message) => {
     return;
 
 })
+/**
+ * Map of joins in the same hour
+ */
+const joinList = {};
+
+client.on("guildMemberAdd", function(member){
+    console.log(`a user joined: ${JSON.stringify(member)}`);
+    var bucket = Math.round(member.user.createdTimestamp / 3600_000);
+    var count = joinList[bucket];
+    if(!count) {
+        count = 1;
+        console.log(`banable ${member.bannable}: ${member.user.createdTimestamp}`);
+    } else {
+        if(count > 2)
+        {
+            // this is a weirdly high number, flag that user
+            await member.roles.add( member.guild.roles.resolve('936726920148713543'))
+        }
+        count++;
+        console.log(`There were ${count} users at ${bucket}`);
+    }
+    joinList[bucket];
+    
+});
 
 
 const helloGifs = [
