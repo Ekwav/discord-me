@@ -47,7 +47,7 @@ client.on('messageCreate', async (message) => {
         return; // don't respond to bots
     }
 
-    if (["hi", "hey", "hello", "hello there"].indexOf(text) >= 0) {
+    if (["hi", "hey", "hello", "hello there", "hello!", "hello?", "hey!", "hey?"].indexOf(text) >= 0) {
         console.log("hit");
         message.reply(getHelloGif());
         return;
@@ -185,7 +185,12 @@ const helloGifs = [
     "https://tenor.com/view/critical-role-crit-role-arsequeef-laura-bailey-cowboy-gif-13618685",
     "https://tenor.com/view/jimmy-fallon-tonightshow-hi-hello-gif-13958590",
     "https://tenor.com/view/madagascar-alex-the-lion-hi-there-hello-there-hey-there-gif-23421002",
-    "https://tenor.com/view/hi-hey-there-wassup-hey-gurl-gif-22273737"
+    "https://tenor.com/view/hi-hey-there-wassup-hey-gurl-gif-22273737",
+    "https://tenor.com/view/ted-hey-teddy-bear-gif-24792726",
+    "https://tenor.com/view/hey-derek-muller-veritasium-hey-there-hi-gif-24985514",
+    "https://tenor.com/view/hello-hello-there-hello-its-me-hi-hey-gif-21707523",
+    "https://tenor.com/view/homie-sup-sup-homie-kristen-wiig-nod-gif-5654782",
+    "https://tenor.com/view/hu-tao-genshin-heyhihello-eggstvick-discorduwu-gif-23555593"
 ]
 function getHelloGif() {
     return helloGifs[Math.floor(Math.random() * helloGifs.length)]
