@@ -40,11 +40,13 @@ const responses = [{
 }, {
     triggers: [/this.*is a rat/],
     response: "Hello there\n"
-        + "There is, in fact, no rat in any mods I put into <#890682907889373257>."
+        + "There is, in fact, no rat in any mods I put into <#890682907889373257>.\n"
+        + "You are welcome to decompile it or take a look at the source code at https://github.com/coflnet/skyblockmod"
+        + "If you got ratted recently please provide all mod files of your modfolder in <#669976123714699284>"
 }, {
     triggers: [/^I got ratted/],
-    response: "Hello there\n"
-        + "Sorry to hear that. If you have the impression that this was caused by our mod, please write in <#669976123714699284>."
+    response: "Hello there,\n"
+        + "Sorry to hear that. If you have the impression that this was caused by our mod, please write in <#669976123714699284> with more context."
 }]
 
 
