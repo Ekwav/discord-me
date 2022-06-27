@@ -35,9 +35,19 @@ const responses = [{
 }, {
     triggers: [/^what.*best setting/],
     response: "The 'best' settings depend on what you want to accomplish. \n"
-    + "If you are new and want low risk flips enable the `sniper` flip finder and adjust your min profit and max cost according to your purse.\n"
-    + "I generally recommend using all flip finders with a relatively high min profit."
+        + "If you are new and want low risk flips enable the `sniper` flip finder and adjust your min profit and max cost according to your purse.\n"
+        + "I generally recommend using all flip finders with a relatively high min profit."
+}, {
+    triggers: [/this.*is a rat/],
+    response: "Hello there\n"
+        + "There is, in fact, no rat in any mods I put into <#890682907889373257>."
+}, {
+    triggers: [/^I got ratted/],
+    response: "Hello there\n"
+        + "Sorry to hear that. If you have the impression that this was caused by our mod, please write in <#669976123714699284>."
 }]
+
+
 
 client.on('messageCreate', async (message) => {
     var response = "";
@@ -65,8 +75,7 @@ client.on('messageCreate', async (message) => {
     });
     if (cancel) return;
 
-    if(message.member.displayName == "testacc")
-    {
+    if (message.member.displayName == "testacc") {
         console.log("its test");
         let member = message.member;
     }
@@ -87,24 +96,23 @@ client.on('messageCreate', async (message) => {
  */
 const joinList = {};
 
-client.on("guildMemberAdd", async function(member){
+client.on("guildMemberAdd", async function (member) {
     console.log(`a user joined: ${JSON.stringify(member)}`);
     var bucket = Math.round(member.user.createdTimestamp / 3600_000);
     var count = joinList[bucket];
-    if(!count) {
+    if (!count) {
         count = 1;
         console.log(`banable ${member.bannable}: ${member.user.createdTimestamp}`);
     } else {
-        if(count > 2)
-        {
+        if (count > 2) {
             // this is a weirdly high number, flag that user
-            await member.roles.add( member.guild.roles.resolve('936726920148713543'))
+            await member.roles.add(member.guild.roles.resolve('936726920148713543'))
         }
         count++;
         console.log(`There were ${count} users at ${bucket}`);
     }
     joinList[bucket];
-    
+
 });
 
 
