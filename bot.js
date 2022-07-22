@@ -65,6 +65,8 @@ client.on('messageCreate', async (message) => {
         return;
     }
     let cancel = false;
+    if (message.channelId == "669976123714699284")
+        cancel = true;
     responses.forEach(element => {
         if (cancel) return;
         element.triggers.forEach(trigger => {
