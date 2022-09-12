@@ -47,6 +47,9 @@ const responses = [{
     triggers: [/^I got ratted/],
     response: "Hello there,\n"
         + "Sorry to hear that. If you have the impression that this was caused by our mod, please write in <#669976123714699284> with more context."
+}, {
+    triggers: [/is .*(prem+|premium+).*worth/],
+    response: "Premium+ gives you a slight edge over premium. It's our best tier but is purposefully unproportionately more expensive to keep the competition lower than on premium. If you can afford it, please consider supporting us through prem+."
 }]
 
 
