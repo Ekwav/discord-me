@@ -1,4 +1,4 @@
-FROM node:16-alpine3.11
+FROM node:19-alpine3.16
 
 COPY package*.json ./
 
