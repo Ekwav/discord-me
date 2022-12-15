@@ -55,6 +55,14 @@ const responses = [{
 
 
 client.on('messageCreate', async (message) => {
+    try {
+        processMessage(message)
+    } catch (error) {
+        console.log("error occured", error);
+    }
+})
+
+function processMessage(message) {
     var response = "";
     //if (message.channelId)
     var text = message.content.toLowerCase();
@@ -96,8 +104,8 @@ client.on('messageCreate', async (message) => {
         if (response != "")
             message.channel.send(response)
     return;
+}
 
-})
 /**
  * Map of joins in the same hour
  */
