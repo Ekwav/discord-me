@@ -50,6 +50,14 @@ const responses = [{
 }, {
     triggers: [/is .*(prem+|premium+).*worth/],
     response: "Premium+ gives you a slight edge over premium. It's our best tier but is purposefully unproportionately more expensive to keep the competition lower than on premium. If you can afford it, please consider supporting us through prem+."
+},
+{
+    triggers: [/How much does premium cost/],
+    response: "Premium costs about 6,99€/month depending on your payment method. You can see details at https://sky.coflnet.com/premium"
+},
+{
+    triggers: [/^is premium.* good/],
+    response: "Yes"
 }]
 
 
@@ -70,7 +78,7 @@ function processMessage(message) {
         return; // don't respond to bots
     }
 
-    if (["hi", "hey", "hello", "hello there", "hello!", "hello?", "hey!", "hey?"].indexOf(text) >= 0) {
+    if (["hi", "hey", "hello", "hello there", "hello!", "hello?", "hey!", "hey?", "servus", "hi there"].indexOf(text) >= 0) {
         console.log("hit");
         message.reply(getHelloGif());
         return;
