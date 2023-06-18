@@ -78,7 +78,8 @@ function processMessage(message) {
         return; // don't respond to bots
     }
 
-    if (["hi", "hey", "hello", "hello there", "hello!", "hello?", "hey!", "hey?", "servus", "hi there"].indexOf(text) >= 0) {
+    if (["hi", "hey", "hello", "hello there", "hello!", "hello?", "hey!", "hey?", "servus", "hi there",
+        "howdy", "hola", "ni hao"].indexOf(text) >= 0) {
         console.log("hit");
         message.reply(getHelloGif());
         return;
@@ -221,7 +222,17 @@ const helloGifs = [
     "https://tenor.com/view/hey-derek-muller-veritasium-hey-there-hi-gif-24985514",
     "https://tenor.com/view/hello-hello-there-hello-its-me-hi-hey-gif-21707523",
     "https://tenor.com/view/homie-sup-sup-homie-kristen-wiig-nod-gif-5654782",
-    "https://tenor.com/view/hu-tao-genshin-heyhihello-eggstvick-discorduwu-gif-23555593"
+    "https://tenor.com/view/hu-tao-genshin-heyhihello-eggstvick-discorduwu-gif-23555593",
+    "https://media.tenor.com/y6aIM8CBK2cAAAAM/hey-fr-stuart-long.gif",
+    "https://media.tenor.com/GIwH1TBlPUMAAAAM/elmo-hello.gif",
+    "https://media.tenor.com/6mJBKtHHpMcAAAAd/mexicandad_rgv-hola.gif",
+    "https://media.tenor.com/K4g5xM87CScAAAAM/hola-amores-laura-sanchez.gif",
+    "https://media.tenor.com/W3ZRznuUAYEAAAAM/hola-mi-t%C3%ADo.gif",
+    "https://media.tenor.com/YuHWmsYK6B8AAAAM/esteisi-isisnur.gif",
+    "https://media.tenor.com/8xMVD9xwQZIAAAAM/hello-mayuka-ayaka-hello-niziu.gif",
+    "https://media.tenor.com/N2JlFsx-xycAAAAM/hey-kajal.gif",
+    "https://media.tenor.com/xWUVeusufFsAAAAM/galactic-republic-obi-wan-kenobi.gif",
+    "https://media.tenor.com/vUawL7DT8PcAAAAM/hello-elijah.gif"
 ]
 function getHelloGif() {
     return helloGifs[Math.floor(Math.random() * helloGifs.length)]
