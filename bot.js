@@ -58,6 +58,10 @@ const responses = [{
 {
     triggers: [/^is premium.* good/],
     response: "Yes"
+},
+{
+    triggers: [/^Howdy girl/],
+    response: "https://tenor.com/view/howdy-cowboy-toy-story-gif-12394471"
 }]
 
 
@@ -79,7 +83,7 @@ function processMessage(message) {
     }
 
     if (["hi", "hey", "hello", "hello there", "hello!", "hello?", "hey!", "hey?", "servus", "hi there",
-        "howdy", "hola", "ni hao"].indexOf(text) >= 0) {
+        "howdy", "hola", "ni hao", "buenos dias", "guten tag",].indexOf(text) >= 0) {
         console.log("hit");
         message.reply(getHelloGif());
         return;
