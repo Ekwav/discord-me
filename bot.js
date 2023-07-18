@@ -83,7 +83,7 @@ function processMessage(message) {
     }
 
     if (["hi", "hey", "hello", "hello there", "hello!", "hello?", "hey!", "hey?", "servus", "hi there",
-        "howdy", "hola", "ni hao", "buenos dias", "guten tag",].indexOf(text) >= 0) {
+        "howdy", "hola", "ni hao", "buenos dias", "guten tag", "hello there!", "hola amores"].indexOf(text) >= 0) {
         console.log("hit");
         message.reply(getHelloGif());
         return;
