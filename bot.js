@@ -170,7 +170,7 @@ const helloGifs = [
     "https://tenor.com/view/olafs-frozen-adventure-olaf-hello-darkness-hello-frozen-gif-15584286",
     "https://tenor.com/view/milk-and-mocha-hugs-bear-couple-love-cute-gif-16209598",
     "https://tenor.com/view/baby-yoda-baby-yoda-wave-baby-yoda-waving-hi-hello-gif-15975082",
-    "https://tenor.com/view/hi-husky-hello-cute-gif-15361405",
+    "https://tenor.com/view/dog-husky-dog-door-hi-gif-17284157",
     "https://tenor.com/view/whale-whale-hello-there-well-hello-there-hello-hi-gif-3556242",
     "https://tenor.com/view/hi-friends-baby-goat-saying-hello-saying-hi-hi-neighbor-gif-14737423",
     "https://tenor.com/view/arlo-hello-puppet-gif-13856332",
