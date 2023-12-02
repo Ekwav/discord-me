@@ -56,12 +56,16 @@ const responses = [{
     response: "Premium costs about 6,99€/month depending on your payment method. You can see details at https://sky.coflnet.com/premium"
 },
 {
-    triggers: [/^is premium.* good/],
+    triggers: [/^is prem.* good/],
     response: "Yes"
 },
 {
     triggers: [/^Howdy girl/],
     response: "https://tenor.com/view/howdy-cowboy-toy-story-gif-12394471"
+},
+{
+    triggers: [/(people|how|ppl).*(claiming|buy|snipe).*(fast|quick)/],
+    response: "They enabled a custom gui with `/cofl setgui cofl` and use the `Open best/next flip` keybind to open the next flip as soon as it arrives. (its in the minecraft settings)"
 }]
 
 
