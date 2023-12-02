@@ -1,4 +1,4 @@
-FROM node:19-alpine3.16
+FROM node:hydrogen-alpine3.17
 
 COPY package*.json ./
 
