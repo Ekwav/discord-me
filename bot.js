@@ -66,6 +66,13 @@ const responses = [{
 {
     triggers: [/(people|how|ppl).*(claiming|buy|snipe).*(fast|quick)/],
     response: "They enabled a custom gui with `/cofl setgui cofl` and use the `Open best/next flip` keybind to open the next flip as soon as it arrives. (its in the minecraft settings)"
+}, {
+    triggers: [/^how.*verify/],
+    response: "You verify your minecraft account with our mod from https://sky.coflnet.com/mod\n"
+        + "Upon joining hypixel skyblock it will tell you to first click a link to find out which google account id you have (thats uses to sync settings and check who invited you).\n"
+        + "Next it tells you a certain 3 digit code that you have to bid on an auction.\n"
+        + "Our server than verifies with hypixel that its the correct amount and you are verified.\n"
+        + "See this video for more details: https://www.youtube.com/watch?list=PLDpPmxIcq9tAssQlyJMBlSmSg5JOpq699&v=Ysqn_JaC13A"
 }]
 
 
