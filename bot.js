@@ -43,7 +43,7 @@ const responses = [{
         + "There is, in fact, no rat in any mods I put into <#890682907889373257>.\n"
         + "You are welcome to decompile it or take a look at the source code at https://github.com/coflnet/skyblockmod \n"
         + "If you got ratted recently please provide all mod files of your modfolder in <#669976123714699284>"
-},{
+}, {
     triggers: [/^is this a rat/],
     response: "No it is not\n"
         + "Go check via https://isthisarat.com or decompile it yourself"
@@ -66,6 +66,10 @@ const responses = [{
 {
     triggers: [/^Howdy girl/],
     response: "https://tenor.com/view/howdy-cowboy-toy-story-gif-12394471"
+},
+{
+    triggers: [/(blacklist|block).*(seller|people|ah|player)/],
+    response: "with `/cl bl add forceblacklist=true seller=ign` you can blacklist sellers. (replace `ign` with the sellers name)"
 },
 {
     triggers: [/(people|how|ppl).*(claiming|buy|snipe).*(fast|quick)/],
