@@ -18,7 +18,7 @@ const responses = [{
         "At present it is in early alpha, but apparently already considered useful by most of our users.\n" +
         "I personally do not use it as I am busy improving the flip finding itself as well as developing other cool services/things."
 }, {
-    triggers: [/^is this legit/, /is the[a-z ]{1,10}mod legit/],
+    triggers: [/^is this legit/, /is the mod legit/],
     response: "Yes"
 }, {
     triggers: [/this irl trading/, /this is irl trading/],
