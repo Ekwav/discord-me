@@ -60,7 +60,7 @@ const responses = [{
     response: "Premium costs about 6,99€/month depending on your payment method. You can see details at https://sky.coflnet.com/premium"
 },
 {
-    triggers: [/^is prem.* good/]i,
+    triggers: [/^is prem.* good/i],
     response: "Yes"
 },
 {
