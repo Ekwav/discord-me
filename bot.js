@@ -18,7 +18,7 @@ const responses = [{
         "At present it is in early alpha, but apparently already considered useful by most of our users.\n" +
         "I personally do not use it as I am busy improving the flip finding itself as well as developing other cool services/things."
 }, {
-    triggers: [/^is this legit/, /is the mod legit/],
+    triggers: [/^is this legit/, /is the mod legit/i],
     response: "Yes"
 }, {
     triggers: [/this irl trading/, /this is irl trading/],
@@ -30,52 +30,52 @@ const responses = [{
     triggers: [/904334586195087370/],
     response: "Calling <@267680402594988033> "
 }, {
-    triggers: [/\/ah.*(cheap|buy)/],
+    triggers: [/\/ah.*(cheap|buy)/i],
     response: "Please don't violate rule #2, you will be kicked on your next violation."
 }, {
-    triggers: [/^what.*best setting/],
+    triggers: [/^what.*best setting/i],
     response: "The 'best' settings depend on what you want to accomplish. \n"
         + "If you are new and want low risk flips enable the `sniper` flip finder and adjust your min profit and max cost according to your purse.\n"
         + "I generally recommend using all flip finders with a relatively high min profit."
 }, {
-    triggers: [/this.*is a rat/],
+    triggers: [/this.*is a rat/i],
     response: "Hello there\n"
         + "There is, in fact, no rat in any mods I put into <#890682907889373257>.\n"
         + "You are welcome to decompile it or take a look at the source code at https://github.com/coflnet/skyblockmod \n"
         + "If you got ratted recently please provide all mod files of your modfolder in <#669976123714699284>"
 }, {
-    triggers: [/^is this a rat/],
+    triggers: [/^is this a rat/i],
     response: "No it is not\n"
         + "Go check via https://isthisarat.com or decompile it yourself"
 }, {
-    triggers: [/^I got ratted/],
+    triggers: [/^I got ratted/i],
     response: "Hello there,\n"
         + "Sorry to hear that. If you have the impression that this was caused by our mod, please write in <#669976123714699284> with more context."
 }, {
-    triggers: [/is .*(prem+|premium+).*worth/],
+    triggers: [/is .*(prem+|premium+).*worth/i],
     response: "Premium+ gives you a slight edge over premium. It's our best tier but is purposefully unproportionately more expensive to keep the competition lower than on premium. If you can afford it, please consider supporting us through prem+."
 },
 {
-    triggers: [/How much does premium cost/],
+    triggers: [/How much does premium cost/i],
     response: "Premium costs about 6,99€/month depending on your payment method. You can see details at https://sky.coflnet.com/premium"
 },
 {
-    triggers: [/^is prem.* good/],
+    triggers: [/^is prem.* good/]i,
     response: "Yes"
 },
 {
-    triggers: [/^Howdy girl/],
+    triggers: [/^Howdy girl/i],
     response: "https://tenor.com/view/howdy-cowboy-toy-story-gif-12394471"
 },
 {
-    triggers: [/(how|to).*(blacklist|block).*(seller|people|ah|player)/],
+    triggers: [/(how|to).*(blacklist|block).*(seller|people|ah|player)/i],
     response: "with `/cl bl add forceblacklist=true seller=ign` you can blacklist sellers. (replace `ign` with the sellers name)"
 },
 {
-    triggers: [/(people|how|ppl).*(claiming|buy|snipe).*(fast|quick)/],
+    triggers: [/(people|how|ppl).*(claiming|buy|snipe).*(fast|quick)/i],
     response: "They enabled a custom gui with `/cofl setgui cofl` and use the `Open best/next flip` keybind to open the next flip as soon as it arrives. (its in the minecraft settings)"
 }, {
-    triggers: [/^how.*verify/],
+    triggers: [/^how.*verify/i],
     response: "You verify your minecraft account with our mod from https://sky.coflnet.com/mod\n"
         + "Upon joining hypixel skyblock it will tell you to first click a link to find out which google account id you have (thats uses to sync settings and check who invited you).\n"
         + "Next it tells you a certain 3 digit code that you have to bid on an auction.\n"
