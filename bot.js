@@ -1,13 +1,19 @@
-const { Client, Intents, ThreadChannel, Channel } = require('discord.js');
+const { Client, IntentsBitField, GatewayIntentBits, ThreadChannel, Channel } = require('discord.js');
 const dotenv = require('dotenv')
 dotenv.config()
-const myIntents = new Intents();
-myIntents.add(Intents.FLAGS.GUILD_PRESENCES, Intents.FLAGS.GUILD_MEMBERS, Intents.FLAGS.GUILDS, Intents.FLAGS.GUILD_MESSAGES);
+const myIntents = new IntentsBitField();
+myIntents.add(
+    GatewayIntentBits.Guilds,
+    GatewayIntentBits.GuildMessages,
+    GatewayIntentBits.MessageContent,
+    GatewayIntentBits.GuildMembers);
 
 // Options to create a new thread
 
 const client = new Client({ intents: myIntents });
-
+client.on('ready', () => {
+    console.log(`Logged in as ${client.user.tag}!`);
+});
 const MessageTimes = [];
 
 const responses = [{
