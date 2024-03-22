@@ -78,6 +78,10 @@ const responses = [{
     response: "with `/cl bl add forceblacklist=true seller=ign` you can blacklist sellers. (replace `ign` with the sellers name)"
 },
 {
+    triggers: [/can I pause .*premium/i],
+    response: "No, you can't pause premium. Its a prepaid service and not a subscription. You can use it on another minecraft account if you want to. Just join with the other account and verify it."
+},
+{
     triggers: [/(people|how|ppl).*(claiming|buy|snipe).*(fast|quick)/i],
     response: "They enabled a custom gui with `/cofl setgui cofl` and use the `Open best/next flip` keybind to open the next flip as soon as it arrives. (its in the minecraft settings)"
 }, {
