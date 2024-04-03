@@ -63,7 +63,7 @@ const responses = [{
 },
 {
     triggers: [/How much does premium cost/i],
-    response: "Premium costs about 6,99€/month depending on your payment method. You can see details at https://sky.coflnet.com/premium"
+    response: "Premium costs about ~8€/month depending on your payment method and length. You can see details at https://sky.coflnet.com/premium"
 },
 {
     triggers: [/^is prem.* good/i],
