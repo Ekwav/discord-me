@@ -8,11 +8,30 @@ myIntents.add(
     GatewayIntentBits.MessageContent,
     GatewayIntentBits.GuildMembers);
 
-// Options to create a new thread
+var activities = [
+    "checking for delay bypassers",
+    "answering questions",
+    "replying to hi",
+    "doing nothing",
+    "being bored",
+    "fixing bugs",
+    "adding features",
+    "checking for bugs",
+    "searching for projects",
+    "selling CoflCoins",
+    "learning new things",
+    "watching the chat",
+    "devlog is long"
+];
 
 const client = new Client({ intents: myIntents });
 client.on('ready', () => {
     console.log(`Logged in as ${client.user.tag}!`);
+    // set with the bot's activity no playing, watching, listening, or streaming
+    client.user.setActivity("eating a cookie", { type: 4 });
+    setInterval(() => {
+        client.user.setActivity(activities[Math.floor(Math.random() * activities.length)], { type: 4 });
+    }, 1000 * 60 * 5);
 });
 const MessageTimes = [];
 
@@ -162,7 +181,7 @@ client.on("guildMemberAdd", async function (member) {
         console.log(`banable ${member.bannable}: ${member.user.createdTimestamp}`);
     } else {
         if (count > 2) {
-            // this is a weirdly high number, flag that user
+            // this is a weirdly high number, flag that user as likely bot
             await member.roles.add(member.guild.roles.resolve('936726920148713543'))
         }
         count++;
