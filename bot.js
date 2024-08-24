@@ -31,7 +31,7 @@ client.on('ready', () => {
     client.user.setActivity("eating a cookie", { type: 4 });
     setInterval(() => {
         client.user.setActivity(activities[Math.floor(Math.random() * activities.length)], { type: 4 });
-    }, 1000 * 60 * 5);
+    }, 1000 * 60 * 2);
 });
 const MessageTimes = [];
 
