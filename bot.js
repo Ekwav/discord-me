@@ -93,7 +93,7 @@ const responses = [{
     response: "https://tenor.com/view/howdy-cowboy-toy-story-gif-12394471"
 },
 {
-    triggers: [/(how|to).*(blacklist|block).*(seller|people|ah|player)/i],
+    triggers: [/(how|to).*(blacklist| block).*(seller|people|ah|player)/i],
     response: "with `/cl bl add forceblacklist=true seller=ign` you can blacklist sellers. (replace `ign` with the sellers name)"
 },
 {
