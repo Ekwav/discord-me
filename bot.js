@@ -21,7 +21,16 @@ var activities = [
     "selling CoflCoins",
     "learning new things",
     "watching the chat",
-    "devlog is long"
+    "devlog is long",
+    "hacking the mainframe",
+    "replying to hello",
+    "reading a useless argument",
+    "programming",
+    "optimizing code",
+    "searching for flips",
+    "waiting for hypixel update",
+    "reminding people of rule 1",
+    "reminding people of rule 2",
 ];
 
 const client = new Client({ intents: myIntents });
