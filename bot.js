@@ -78,7 +78,7 @@ const responses = [{
         + "You are welcome to decompile it or take a look at the source code at https://github.com/coflnet/skyblockmod \n"
         + "If you got ratted recently please provide all mod files of your modfolder in <#669976123714699284>"
 }, {
-    triggers: [/^is this a rat/i, /is the mod a rat/i, /is the mod a virus/i, /is the mod a trojan/i],
+    triggers: [/.{0,10}is this a rat/i, /is the mod a rat/i, /is this mod a rat/i, /is the mod a virus/i, /is the mod a trojan/i],
     response: "No it is not\n"
         + "Go check via https://isthisarat.com or decompile it yourself"
 }, {
