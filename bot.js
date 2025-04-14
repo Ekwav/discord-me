@@ -242,7 +242,6 @@ const helloGifs = [
     "https://tenor.com/view/surprise-hi-there-oh-hi-hello-hey-gif-13847997",
     "https://tenor.com/view/cat-hi-cute-paw-adorable-gif-15365720",
     "https://tenor.com/view/husky-hi-tinder-match-gif-14672196",
-    "https://tenor.com/view/hey-gif-20083062",
     "https://tenor.com/view/jimmy-fallon-hi-haaaay-horse-gif-5247867",
     "https://tenor.com/view/servus-hallo-moin-gif-14596061",
     "https://tenor.com/view/hi-hey-hello-there-kitten-cute-gif-16697937",
@@ -293,7 +292,13 @@ const helloGifs = [
     "https://media.tenor.com/8xMVD9xwQZIAAAAM/hello-mayuka-ayaka-hello-niziu.gif",
     "https://media.tenor.com/N2JlFsx-xycAAAAM/hey-kajal.gif",
     "https://media.tenor.com/xWUVeusufFsAAAAM/galactic-republic-obi-wan-kenobi.gif",
-    "https://media.tenor.com/vUawL7DT8PcAAAAM/hello-elijah.gif"
+    "https://media.tenor.com/vUawL7DT8PcAAAAM/hello-elijah.gif",
+    "https://media1.tenor.com/m/DYPK6ZMqOu8AAAAd/laroche.gif",
+    "https://media.tenor.com/dk0P7N0SlR8AAAAM/glados-portal.gif",
+    "https://media.tenor.com/nL877OB3oT8AAAAM/project-sekai-shizuku-hinomori.gif",
+    "https://media.tenor.com/okxvhyfjFiIAAAAM/hi-babybeans.gif",
+    "https://media.tenor.com/Si06tFiR4NQAAAAM/maite-mainte.gif",
+    "https://media1.tenor.com/m/47OJ5GEWSooAAAAd/ummed-umed.gif"
 ]
 function getHelloGif() {
     return helloGifs[Math.floor(Math.random() * helloGifs.length)]
