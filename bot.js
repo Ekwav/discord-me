@@ -69,8 +69,8 @@ const responses = [{
 }, {
     triggers: [/^what.*best setting/i],
     response: "The 'best' settings depend on what you want to accomplish. \n"
-        + "If you are new and want low risk flips enable the `sniper` flip finder and adjust your min profit and max cost according to your purse.\n"
-        + "I generally recommend using all flip finders with a relatively high min profit."
+        + "If you are new and want low risk flips enable the `median sniper` flip finder and adjust your min profit to where you manage to get flips but can still sell them.\n"
+        + "I generally recommend buying anything you see with more than 2 volume. The `EstProfitperHour` filter may also be useful to you.\n"
 }, {
     triggers: [/this.*is a rat/i],
     response: "Hello there\n"
