@@ -140,6 +140,7 @@ function processMessage(message) {
     }
 
     if (["hi", "hey", "hello", "hello there", "hello!", "hello?", "hey!", "hey?", "servus", "hi there",
+        "salutations",
         "howdy", "hola", "ni hao", "buenos dias", "guten tag", "hello there!", "hola amores"].indexOf(text) >= 0) {
         console.log("hit");
         message.reply(getHelloGif());
@@ -298,7 +299,23 @@ const helloGifs = [
     "https://media.tenor.com/nL877OB3oT8AAAAM/project-sekai-shizuku-hinomori.gif",
     "https://media.tenor.com/okxvhyfjFiIAAAAM/hi-babybeans.gif",
     "https://media.tenor.com/Si06tFiR4NQAAAAM/maite-mainte.gif",
-    "https://media1.tenor.com/m/47OJ5GEWSooAAAAd/ummed-umed.gif"
+    "https://media1.tenor.com/m/47OJ5GEWSooAAAAd/ummed-umed.gif",
+    "https://media.tenor.com/8cnbr1VZmDAAAAAM/johnn-depp-hi.gif",
+    "https://media.tenor.com/yxNA07XPSagAAAAM/salutation-hi.gif",
+    "https://media.tenor.com/lmeq7lTGWSAAAAA1/cat-greetings.webp",
+    "https://media.tenor.com/PctcOEJVBEAAAAAM/salutations-greetings.gif",
+    "https://media.tenor.com/lk4YvaVhjmUAAAAM/greetings-snail.gif",
+    "https://media.tenor.com/H4d2npT9IEEAAAAM/greetings-and-salutations-darius-jeremy-pierce.gif",
+    "https://media.tenor.com/yC09NhG2XxMAAAAM/salute-nigel-sylvester.gif",
+    "https://media.tenor.com/0-VTD69L7OQAAAAM/cat-hat.gif",
+    "https://media.tenor.com/dwZu8wjAsbEAAAAM/bom-dia-good-morning.gif",
+    "https://media.tenor.com/DXghCAbmhpYAAAAM/hi-hello.gif",
+    "https://media.tenor.com/qSNpDpFm5gUAAAAM/oh-hey-oh-hi.gif",
+    "https://media.tenor.com/Xls8jPCIoN0AAAAM/ren%C3%A9e-slater.gif",
+    "https://tenor.com/de/view/shagarita-shalymar-shalymar-rivera-shalymarrivera-shalymar-rivera-gonzalez-gif-7654420395961857426",
+    "https://tenor.com/de/view/melambaikan-tangan-jakarta-fashion-week-halo-hai-senang-bertemu-kamu-gif-23689351",
+    "https://media.tenor.com/HQJq8q6z1uUAAAAm/hey-hi.webp",
+    "https://media.tenor.com/O5-Uwtc-C_4AAAA1/hello-chat-good-morning.webp"
 ]
 function getHelloGif() {
     return helloGifs[Math.floor(Math.random() * helloGifs.length)]
