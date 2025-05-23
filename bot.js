@@ -312,8 +312,8 @@ const helloGifs = [
     "https://media.tenor.com/DXghCAbmhpYAAAAM/hi-hello.gif",
     "https://media.tenor.com/qSNpDpFm5gUAAAAM/oh-hey-oh-hi.gif",
     "https://media.tenor.com/Xls8jPCIoN0AAAAM/ren%C3%A9e-slater.gif",
-    "https://tenor.com/de/view/shagarita-shalymar-shalymar-rivera-shalymarrivera-shalymar-rivera-gonzalez-gif-7654420395961857426",
-    "https://tenor.com/de/view/melambaikan-tangan-jakarta-fashion-week-halo-hai-senang-bertemu-kamu-gif-23689351",
+    "https://media1.tenor.com/m/ajn2y5bPtZIAAAAd/shagarita-shalymar.gif",
+    "https://media1.tenor.com/m/TkfuPnvqHmUAAAAd/melambaikan-tangan-jakarta-fashion-week.gif",
     "https://media.tenor.com/HQJq8q6z1uUAAAAm/hey-hi.webp",
     "https://media.tenor.com/O5-Uwtc-C_4AAAA1/hello-chat-good-morning.webp"
 ]
