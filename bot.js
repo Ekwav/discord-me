@@ -110,6 +110,10 @@ const responses = [{
     response: "No, you can't pause premium. Its a prepaid service and not a subscription. You can use it on another minecraft account if you want to. Just join with the other account and verify it."
 },
 {
+    triggers: [/flips .*web.* not .* game$/i],
+    response: "Flips show up on the website more often usually because in game they are hidden if sold, to little purse or spam protection. You can check the exact reason with `/cofl blocked <auction uuid>` if yo have prem+ every reason is stored for a week."
+},
+{
     triggers: [/(people|how|ppl).*(claiming|buy|snipe).*(fast|quick)/i],
     response: "They enabled a custom gui with `/cofl setgui cofl` and use the `Open best/next flip` keybind to open the next flip as soon as it arrives. (its in the minecraft settings)"
 }, {
