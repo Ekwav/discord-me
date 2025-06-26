@@ -225,7 +225,6 @@ const helloGifs = [
     "https://tenor.com/view/hello-kitty-hello-wave-hi-cute-gif-8672464",
     "https://tenor.com/view/hi-hello-wave-bear-gif-5154793",
     "https://tenor.com/view/hi-hello-wave-bear-gif-5154793",
-    "https://tenor.com/view/hello-there-hi-greetings-princess-bride-mandy-patinkin-gif-17710385",
     "https://tenor.com/view/maite-perroni-proactiv-hi-hello-gif-20314223",
     "https://tenor.com/view/hey-girl-me-passing-by-my-ex-gif-9374870",
     "https://tenor.com/view/inside-out-joy-hi-hey-hello-gif-14388296",
