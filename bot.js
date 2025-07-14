@@ -315,9 +315,8 @@ const helloGifs = [
     "https://media.tenor.com/DXghCAbmhpYAAAAM/hi-hello.gif",
     "https://media.tenor.com/qSNpDpFm5gUAAAAM/oh-hey-oh-hi.gif",
     "https://media.tenor.com/Xls8jPCIoN0AAAAM/ren%C3%A9e-slater.gif",
-    "https://media1.tenor.com/m/ajn2y5bPtZIAAAAd/shagarita-shalymar.gif",
-    "https://media1.tenor.com/m/TkfuPnvqHmUAAAAd/melambaikan-tangan-jakarta-fashion-week.gif",
-    "https://media.tenor.com/HQJq8q6z1uUAAAAm/hey-hi.webp",
+    "https://c.tenor.com/ajn2y5bPtZIAAAAd/tenor.gif",
+    "https://c.tenor.com/TkfuPnvqHmUAAAAd/tenor.gif",
     "https://media.tenor.com/O5-Uwtc-C_4AAAA1/hello-chat-good-morning.webp"
 ]
 function getHelloGif() {
