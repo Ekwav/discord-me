@@ -152,6 +152,13 @@ function processMessage(message) {
         }, delaySec * 1000);
         return;
     }
+    if (text == "yo") {
+        const delaySec = Math.floor(Math.random() * 11) + 5;
+        setTimeout(() => {
+            message.reply("https://tenor.com/view/waddup-snoop-dogg-cameo-whats-up-sup-gif-18006770").catch(err => console.error('Failed to send yo:', err));
+        }, delaySec * 1000);
+        return;
+    }
     let cancel = false;
     if (message.channelId == "669976123714699284")
         cancel = true;
