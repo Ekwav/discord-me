@@ -146,8 +146,10 @@ function processMessage(message) {
     if (["hi", "hey", "hello", "hello there", "hello!", "hello?", "hey!", "hey?", "servus", "hi there",
         "salutations",
         "howdy", "hola", "ni hao", "buenos dias", "guten tag", "hello there!", "hola amores"].indexOf(text) >= 0) {
-        console.log("hit");
-        message.reply(getHelloGif());
+        const delaySec = Math.floor(Math.random() * 11) + 5;
+        setTimeout(() => {
+            message.reply(getHelloGif()).catch(err => console.error('Failed to send hello gif:', err));
+        }, delaySec * 1000);
         return;
     }
     let cancel = false;
