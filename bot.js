@@ -49,8 +49,8 @@ const responses = [{
     response: "Hello you,\n" +
         "the mod in <#890682907889373257>  does not intentionally do shady things. (**no** token logging or similar)\n" +
         "It can send commands as you. This is necessary to open auctions, but a potential security risk. (because it could also send other commands)\n" +
-        "At present it is in early alpha, but apparently already considered useful by most of our users.\n" +
-        "I personally do not use it as I am busy improving the flip finding itself as well as developing other cool services/things."
+        "Of course to be fully sure you will need to check and compile the code yourself.\n" +
+        "I use the mod myself whenever I play skyblock, especially the item tracking features are useful for me."
 }, {
     triggers: [/^is this legit/, /is the mod legit/i],
     response: "Yes"
