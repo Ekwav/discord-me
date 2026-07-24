@@ -131,12 +131,11 @@ client.on('messageCreate', async (message) => {
     try {
         processMessage(message)
     } catch (error) {
-        console.log("error occured", error);
+        console.error("error while processing message:", error?.message || error);
     }
 })
 
 function processMessage(message) {
-    var response = "";
     //if (message.channelId)
     var text = message.content.toLowerCase();
     if (message.author.bot) {
@@ -173,21 +172,6 @@ function processMessage(message) {
         })
     });
     if (cancel) return;
-
-    if (message.member.displayName == "testacc") {
-        console.log("its test");
-        let member = message.member;
-    }
-
-    if (message.mentions.users.each(m => {
-        console.log();
-        console.log();
-        console.log(m);
-
-    }))
-        if (response != "")
-            message.channel.send(response)
-    return;
 }
 
 /**
@@ -196,21 +180,19 @@ function processMessage(message) {
 const joinList = {};
 
 client.on("guildMemberAdd", async function (member) {
-    console.log(`a user joined: ${JSON.stringify(member)}`);
     var bucket = Math.round(member.user.createdTimestamp / 3600_000);
     var count = joinList[bucket];
     if (!count) {
         count = 1;
-        console.log(`banable ${member.bannable}: ${member.user.createdTimestamp}`);
     } else {
         if (count > 2) {
             // this is a weirdly high number, flag that user as likely bot
             await member.roles.add(member.guild.roles.resolve('936726920148713543'))
         }
         count++;
-        console.log(`There were ${count} users at ${bucket}`);
     }
-    joinList[bucket];
+    joinList[bucket] = count;
+    console.log(`join bucket=${bucket}, count=${count}, suspicious=${count > 2}`);
 
 });
 
